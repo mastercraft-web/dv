@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Descargado</title>
+</head>
+<body>
+    <h1>Video Descargado</h1><a href="{{ url_for('index') }}">Volver a la Página Principal</a>
+<video controls>
+    <source src="{{ url_for('static', filename=video_file) }}" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+</video>
+<br>
+<a href="{{ url_for('index') }}">Volver a la Página Principal</a>
+
+</body>
+</html>

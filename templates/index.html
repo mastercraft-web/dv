@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargador de Videos</title>
+</head>
+<body>
+    <h1>Descargador de Videos</h1>
+    <form action="/download" method="post">
+        <label for="video_url">URL del Video:</label>
+        <input type="text" id="video_url" name="video_url" required>
+        <label for="quality">Calidad:</label>
+        <select id="quality" name="quality">
+            <option value="best">Mejor disponible</option>
+            <option value="480">480p</option>
+            <option value="72030">720p 30fps</option>
+            <option value="72060">720p 60fps</option>
+            <option value="1080">1080p</option>
+            <option value="108060">1080p 60fps</option>
+        </select>
+        <button type="submit">Descargar</button>
+    </form>
+</body>
+</html>
